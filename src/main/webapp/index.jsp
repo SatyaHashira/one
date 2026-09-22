@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Nexus Satya Shop — Modern E‑Commerce</title>
+    <title>NexusShop — Modern E‑Commerce</title>
 
     <!-- Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -12,22 +12,22 @@
     <style>
         /* ========== ROOT VARIABLES ========== */
         :root {
-            --bg: #fafaf8;
+            --bg: #f6f8fc;
             --bg-card: #ffffff;
-            --primary: #1a1a2e;
+            --primary: #172033;
             --primary-light: #2d2d44;
-            --accent: #e07a5f;
+            --accent: #4f46e5;
             --accent-light: #f4d0c4;
-            --accent-dark: #c05a3e;
-            --muted: #6b6b7a;
-            --muted-light: #a0a0b0;
-            --surface: #f0efed;
-            --success: #2a9d8f;
-            --warning: #e9c46a;
-            --radius: 16px;
-            --radius-sm: 10px;
-            --shadow: 0 4px 24px rgba(26, 26, 46, 0.06);
-            --shadow-hover: 0 12px 48px rgba(26, 26, 46, 0.10);
+            --accent-dark: #3730a3;
+            --muted: #64748b;
+            --muted-light: #94a3b8;
+            --surface: #eef2f7;
+            --success: #059669;
+            --warning: #f59e0b;
+            --radius: 18px;
+            --radius-sm: 12px;
+            --shadow: 0 4px 24px rgba(23, 32, 51, 0.07);
+            --shadow-hover: 0 12px 48px rgba(23, 32, 51, 0.12);
             --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
             --container: 1240px;
         }
@@ -162,7 +162,7 @@
             background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-bottom: 1px solid rgba(26, 26, 46, 0.04);
+            border-bottom: 1px solid rgba(23, 32, 51, 0.05);
         }
         .header-inner {
             display: flex;
@@ -312,7 +312,7 @@
         #mobileMenu {
             display: none;
             background: #fff;
-            border-top: 1px solid rgba(26, 26, 46, 0.04);
+            border-top: 1px solid rgba(23, 32, 51, 0.05);
             padding: 12px 0 20px;
         }
         #mobileMenu ul {
@@ -349,14 +349,14 @@
             border-radius: var(--radius);
             overflow: hidden;
             margin: 20px 24px 0;
-            background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+            background: linear-gradient(135deg, #111827 0%, #253b72 55%, #4f46e5 100%);
         }
         .hero::before {
             content: '';
             position: absolute;
             inset: 0;
             background: url('https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-            opacity: 0.35;
+            opacity: 0.22;
             z-index: 0;
         }
         .hero .container {
@@ -853,7 +853,7 @@
         footer {
             margin-top: 16px;
             padding: 44px 0 28px;
-            border-top: 1px solid rgba(26, 26, 46, 0.04);
+            border-top: 1px solid rgba(23, 32, 51, 0.05);
         }
         .footer-grid {
             display: grid;
@@ -914,9 +914,65 @@
         .footer-bottom {
             text-align: center;
             padding-top: 20px;
-            border-top: 1px solid rgba(26, 26, 46, 0.04);
+            border-top: 1px solid rgba(23, 32, 51, 0.05);
             color: var(--muted-light);
             font-size: 13px;
+        }
+
+
+        /* ========== MODERN UI POLISH ========== */
+        .brand {
+            letter-spacing: -0.7px;
+        }
+
+        .brand i {
+            filter: drop-shadow(0 4px 10px rgba(79, 70, 229, 0.20));
+        }
+
+        .hero {
+            box-shadow: 0 18px 60px rgba(23, 32, 51, 0.14);
+        }
+
+        .hero .badge {
+            background: rgba(255,255,255,0.12);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.16);
+        }
+
+        .hero h1 {
+            letter-spacing: -1.2px;
+        }
+
+        .section-header .title-group h2 {
+            letter-spacing: -0.6px;
+        }
+
+        .cat-card,
+        .product-card,
+        .deal-wrap,
+        .testimonial-card {
+            border: 1px solid rgba(23, 32, 51, 0.06);
+        }
+
+        .cat-card:hover,
+        .product-card:hover {
+            border-color: rgba(79, 70, 229, 0.22);
+        }
+
+        .product-card .footer .add-btn {
+            background: var(--accent);
+        }
+
+        .product-card .footer .add-btn:hover {
+            background: var(--accent-dark);
+        }
+
+        .newsletter-wrap {
+            box-shadow: 0 18px 50px rgba(23, 32, 51, 0.14);
+        }
+
+        .search-wrap input::placeholder {
+            opacity: 0.9;
         }
 
         /* ========== RESPONSIVE ========== */
@@ -1130,7 +1186,7 @@
                 </button>
                 <a class="brand" href="#">
                     <em class="fas fa-store-alt"></em>
-                    <span>Nexus<span class="accent">Shop</span></span>
+                    <span>Nexus<span class="accent">Store</span></span>
                 </a>
             </div>
 
@@ -1185,12 +1241,12 @@
         <!-- HERO -->
         <section class="hero" aria-label="Hero banner">
             <div class="container">
-                <div class="badge"><i class="fas fa-sparkles"></i> New Collection 2026</div>
-                <h1>Discover Premium <br>Essentials</h1>
-                <p>Curated fashion, tech & accessories with free shipping on your first order. Limited-time deals await.</p>
+                <div class="badge"><i class="fas fa-sparkles"></i> New Season 2026</div>
+                <h1>Discover Your Next <br>Favorite</h1>
+                <p>Curated fashion, technology & everyday essentials — with fresh deals updated regularly.</p>
                 <div class="actions">
-                    <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Buy Now</button>
-                    <button class="btn btn-ghost" id="exploreDeals"><i class="fas fa-clock"></i> Explore Deals?</button>
+                    <button class="btn btn-primary" id="shopNow"><i class="fas fa-arrow-right"></i> Shop Now</button>
+                    <button class="btn btn-ghost" id="exploreDeals"><i class="fas fa-bolt"></i> Explore Deals</button>
                 </div>
             </div>
         </section>
@@ -1201,9 +1257,9 @@
                 <div class="section-header">
                     <div class="title-group">
                         <h2 id="cat-title">Browse Categories</h2>
-                        <p>Find exactly what you're looking for</p>
+                        <p>Shop by category</p>
                     </div>
-                    <a href="#" class="view-all">All Categories <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="view-all">Browse All <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="categories-grid" id="categoriesGrid" aria-live="polite"></div>
             </div>
@@ -1215,9 +1271,9 @@
                 <div class="section-header">
                     <div class="title-group">
                         <h2 id="prod-title">Trending Now</h2>
-                        <p>What's hot — popular picks from our community</p>
+                        <p>Popular picks, selected for you</p>
                     </div>
-                    <a href="#" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                    <a href="#" class="view-all">View All Products <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="products-grid" id="productsGrid" aria-live="polite"></div>
             </div>
@@ -1228,8 +1284,8 @@
             <div class="container">
                 <div class="section-header">
                     <div class="title-group">
-                        <h2 id="deals-title">⚡ Flash Deal</h2>
-                        <p>Grab it before it's gone — limited stock</p>
+                        <h2 id="deals-title">⚡ Today's Flash Deal</h2>
+                        <p>Limited-time pricing while stock lasts</p>
                     </div>
                 </div>
                 <div class="deal-wrap">
@@ -1237,13 +1293,13 @@
                         <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="MacBook Air M2" loading="lazy">
                     </div>
                     <div class="deal-content">
-                        <span class="tag"><i class="fas fa-bolt"></i> Limited Offer</span>
+                        <span class="tag"><i class="fas fa-bolt"></i> Limited Time</span>
                         <h3>MacBook Air M2</h3>
                         <p class="desc">Thin, light, and incredibly powerful — the M2 chip redefines performance.</p>
                         <div>
                             <span class="price-big">$999 <span class="old">$1,199</span></span>
                         </div>
-                        <p class="stock">Only <strong>12</strong> items left — hurry!</p>
+                        <p class="stock">Only <strong>12</strong> left — grab yours while stock lasts.</p>
                         <div class="timer-grid" id="dealTimer">
                             <div class="timer-box">
                                 <div class="num" id="dealDays">0</div>
@@ -1274,7 +1330,7 @@
                 <div class="section-header">
                     <div class="title-group">
                         <h2 id="test-title">What Our Customers Say</h2>
-                        <p>Real reviews from real people</p>
+                        <p>What shoppers are saying</p>
                     </div>
                 </div>
                 <div class="testimonials-scroll" id="testimonialsList"></div>
@@ -1287,7 +1343,7 @@
                 <div class="newsletter-wrap">
                     <div class="text">
                         <h3 id="news-title">Stay in the Loop</h3>
-                        <p>Get exclusive offers, early access & new arrivals</p>
+                        <p>Get exclusive offers, early access and new arrivals.</p>
                     </div>
                     <form id="newsletterForm" onsubmit="return false;">
                         <input type="email" id="newsletterEmail" placeholder="Enter your email" aria-label="Email" required />
@@ -1307,9 +1363,9 @@
                 <div class="brand-col">
                     <div class="brand">
                         <i class="fas fa-store-alt"></i>
-                        <span>Nexus<span class="accent">Shop</span></span>
+                        <span>Nexus<span class="accent">Store</span></span>
                     </div>
-                    <p>Modern e‑commerce demo built with care. Quality products, seamless experience.</p>
+                    <p>A modern shopping experience for quality products, useful tech and everyday essentials.</p>
                     <div class="socials">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
